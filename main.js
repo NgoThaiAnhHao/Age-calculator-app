@@ -140,7 +140,7 @@ document.addEventListener("keydown", function (e) {
       month = +month;
       year = +year;
 
-      if (!validInput(day, month, year)) {
+      if (!validInput(day, month, year, currentDay, currentMonth, currentYear)) {
         displayInvalid();
       } else {
         displayValid();
