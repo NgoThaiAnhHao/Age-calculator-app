@@ -136,6 +136,10 @@ document.addEventListener("keydown", function (e) {
       const currentMonth = currentDate.getMonth() + 1;
       const currentYear = currentDate.getFullYear();
 
+      day = +day;
+      month = +month;
+      year = +year;
+
       if (!validInput(day, month, year)) {
         displayInvalid();
       } else {
