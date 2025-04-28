@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Day DD Month MM Year YYYY -- years -- months -- days -->
+
+    <div class="container">
+      <div class="age-calculator">
+        <div class="age-calculator__input">
+          <div class="age-calculator__input-day">
+            <form class="input-form">
+              <label class="label" for="day">DAY</label>
+              <input
+                id="day"
+                type="number"
+                value=""
+                placeholder="DD"
+                class="input input--day"
+                required
+              />
+              <p class="invalidValue invalidInput">Must be a valid day</p>
+            </form>
+          </div>
+          <div class="age-calculator__input-month">
+            <form class="input-form">
+              <label class="label" for="months">MONTH</label>
+              <input
+                id="month"
+                type="number"
+                value=""
+                placeholder="MM"
+                class="input input--month"
+                required
+              />
+              <p class="invalidValue invalidInput">Must be a valid month</p>
+            </form>
+          </div>
+          <div class="age-calculator__input-year">
+            <form class="input-form">
+              <label class="label" for="year">YEAR</label>
+              <input
+                id="year"
+                type="number"
+                value=""
+                placeholder="YYYY"
+                class="input input--year"
+              />
+              <p class="invalidValue invalidInput">Must be a valid year</p>
+            </form>
+          </div>
+        </div>
+
+        <div class="age-calculator__divider">
+          <div class="age-calculator__divider--line"><hr /></div>
+          <img
+            class="age-calculator__divider--img"
+            src="./assets/images/icon-arrow.svg"
+            alt="photo"
+          />
+        </div>
+
+        <div class="age-calculator__output">
+          <div class="age-calculator__output--day">
+            <h1 class="nowrap age-calculator__output--year--answer answer">
+              --
+            </h1>
+            <h1 class="nowrap age-calculator__output--year desc">years</h1>
+          </div>
+          <div class="age-calculator__output--month">
+            <h1 class="nowrap age-calculator__output--month--answer answer">
+              --
+            </h1>
+            <h1 class="nowrap age-calculator__output--month desc">months</h1>
+          </div>
+          <div class="age-calculator__output--year">
+            <h1 class="nowrap age-calculator__output--day--answer answer">
+              --
+            </h1>
+            <h1 class="nowrap age-calculator__output--day desc">days</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/NgoThaiAnhHao"
+          >Ngo Thai Anh Hao</a
+        >.
+      </p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
